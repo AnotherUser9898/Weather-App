@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading">Loading ....</div>
+    </div>
+    <div class="absolute-search-container">
+        <input type="text" class="start-search-bar" placeholder="Enter a city">
+        <button class="start-search">Search</button>
+    </div>
+    <div class="component-container">
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" class="search">
+                <div class="search-button">
+                    <img src="icons/search.png" alt="" class="search-icon">
+                </div>
+                <div class="loading-main">Loading ....</div>
+            </div>
+            <div class = "temperature-scale-buttons">
+                <div class="celsius-button">°C</div>
+                <div class="fahrenheit-button">°F</div>
+            </div>
+        </div>
+        <div class="main-info">
+            <div class="location">Location</div>
+            <div class="description">Description</div>
+            <div class="temperature temperature-indicator">31</div>
+            <img src="" alt="" class="weather-icon">
+        </div>
+        <div class="hourly-forecast">
+            <div class="card-title">Today's Forecast</div>
+            <div class="scroll-container">
+            </div>
+        </div>
+        <div class="conditions">
+            <div class="condition-title card-title">Conditions</div>
+            <div class="condition-container">
+                <div class="condition">
+                    <img src="icons/real-feel.png" alt="" class="condition-icon">
+                    <div class="title">Real Feel</div>
+                    <div class="value temperature-indicator" id = "real-feel"></div>
+                </div>
+                <div class="condition">
+                    <img src="icons/wind.png" alt="" class="condition-icon">
+                    <div class="title">Wind</div>
+                    <div class="value" id = "wind"></div>
+                </div>
+                <div class="condition">
+                    <img src="icons/uv.png" alt="" class="condition-icon">
+                    <div class="title">UV Index</div>
+                    <div class="value" id = "uv"></div>
+                </div>
+                <div class="condition">
+                    <img src="icons/humidity.png" alt="" class="condition-icon">
+                    <div class="title">Humidity</div>
+                    <div class="value" id = "humidity"></div>
+                </div>
+        
+                    </div>
+            </div>
+        <div class="daily-forecast">
+            <div class="daily-forecast-title card-title">3 Day Forecast</div>
+            <div class="daily-forecast-group">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
