@@ -582,7 +582,7 @@ function getTimeString(hours) {
 
 
 async function getWeatherData(search){
-    const weatherData = await fetch(`http://api.weatherapi.com/v1/current.json?key=fc9fa7e57bef4353adc51229240107&q=${search}`);
+    const weatherData = await fetch(`https://api.weatherapi.com/v1/current.json?key=fc9fa7e57bef4353adc51229240107&q=${search}`);
     const weatherJSON = await weatherData.json();
     const condition = weatherJSON.current.condition.text;
     const code = Number(weatherJSON.current.condition.code);
@@ -599,7 +599,7 @@ async function getWeatherData(search){
 }
 
 async function getForecastData(search,localTime) {
-    const forecastData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=fc9fa7e57bef4353adc51229240107&q=${search}&days=7`);
+    const forecastData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=fc9fa7e57bef4353adc51229240107&q=${search}&days=7`);
     const forecastJSON = await forecastData.json();
     console.log(forecastJSON);
     const container = getHourlyCards(forecastJSON,localTime);
